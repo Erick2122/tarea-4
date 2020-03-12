@@ -1,0 +1,25 @@
+PImage smash;
+int xk;
+int yk;
+int dir;
+
+void setup(){
+  size(550,550);
+  xk = 250;
+  yk = 250;
+  dir = 5;
+  smash = loadImage("smash.jpg");
+}
+
+
+  imageMode(CENTER);
+  image(smash;xk,yk, smash.width/4, smash.height/4);
+  xk = xk + dir;
+  if(xk >500){
+  dir = dir*-1;
+  }
+}
+  if(xk < 0){
+      dir = dir*-1;
+  }
+}
